@@ -1,0 +1,47 @@
+.media {
+  display: flex;
+  text-decoration: none;
+
+  &.media-aside {
+    border-bottom: solid 1px #f8f7f5;
+
+    .media-thumbnail {
+      width: 96px;
+      height: 96px;
+    }
+
+    .media-body {
+      padding: 8px 8px 0 12px;
+      width: 100%;
+      line-height: 21px;
+
+      .media-body-title {
+        color: $main-text !important;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &.media-article {
+    width: 100%;
+
+    .media-thumbnail {
+      width: 44px;
+      height: 44px;
+      border-radius: 2px;
+    }
+
+    .media-body {
+      padding: 0 8px;
+      width: calc(100% - 44px);
+      font-size: 1.3rem;
+
+      .media-body-title {
+        color: $main-text !important;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

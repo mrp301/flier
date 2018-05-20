@@ -1,0 +1,54 @@
+.heading-article-title {
+  padding-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 27px;
+  border-bottom: solid 2px #333;
+}
+
+.heading-article-subtitle {
+  position: relative;
+  padding-left: 12px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: #666;
+  }
+}
+
+.heading-aside-title {
+  background-color: $back-color;
+  padding: 16px;
+  font-size: 1.4rem;
+}
+
+.heading-detai-title {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding: 0 0 8px 30px;
+  border-bottom: solid 1px $border-color;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 24px;
+    height: 29px;
+    color: #666;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: '\f1ad';
+  }
+}

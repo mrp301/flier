@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 48px;
+  background: #24292e;
+
+  .header-icon {
+    text-align: center;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .header-logo {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 72.92px);
+    height: 24px;
+  }
+}

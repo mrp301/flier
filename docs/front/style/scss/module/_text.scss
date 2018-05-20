@@ -1,0 +1,52 @@
+
+.text-xlarge {
+  font-size: 1.8rem;
+}
+
+.text-large {
+  font-size: 1.6rem;
+}
+
+.text-medium {
+  font-size: 1.4rem;
+}
+
+.text-small {
+  font-size: 1.2rem;
+}
+
+.text-xsmall {
+  font-size: 1rem;
+}
+
+.text-cite {
+  font-size: 1.1rem;
+
+  .text-cite-head {
+    color: #666;
+  }
+
+  .text-citeIcon {
+    height: 18px;
+  }
+}
+
+.text-description {
+  font-size: 1.3rem;
+  letter-spacing: .05rem;
+  color: #666;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-anchor-underline {
+  text-decoration: underline !important;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,52 @@
+.tweet {
+  position: relative;
+  border: solid 1px $border-color;
+  border-radius: 4px;
+  padding: 17px 17px 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../../../img/social/twitter.png);
+    background-size: contain;
+    top: 16px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .tweet-avatar {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
+
+  .tweet-profile {
+    line-height: 1;
+
+    .tweet-profile-name {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .tweet-profile-id {
+      font-size: 1.2rem;
+      color: #999;
+    }
+  }
+
+  .tweet-date {
+    font-size: 1.1rem;
+    color: #666;
+  }
+
+  .tweet-icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #84929e;
+  }
+
+  .tweet-other {
+    color: #84929e;
+  }
+}

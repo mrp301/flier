@@ -1,0 +1,51 @@
+.icotto-line {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 0 200px;
+  text-align: center;
+  background-color: #f0e9e3;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #333;
+
+  .icotto-line-head {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .icotto-line-btn {
+    position: relative;
+    display: inline-block;
+    margin: 16px;
+    padding: 22px 10px 22px 38px;
+    color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #00c300;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(../../../img/social/line-white.png);
+      background-size: contain;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .icotto-line-img {
+    position: absolute;
+    right: 50%;
+    bottom: -58px;
+    transform: translateX(50%);
+    width: 200px;
+  }
+}
