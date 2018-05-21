@@ -1,3 +1,6 @@
+#スケジュール
+- https://docs.google.com/spreadsheets/d/1fw-3M0BXq9cxP8XOKsJc_xqgRHQ4fdld5zsvbIJWGF0/edit?usp=sharing
+
 ------------------------------------------------------------------------------------
 # 5/19,20
 ## やったこと  
