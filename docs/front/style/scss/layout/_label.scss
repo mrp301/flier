@@ -1,8 +1,6 @@
 .l-label-container {
-  display: flex;
-  flex-wrap: wrap;
 
-  li {
-    margin: 0 8px 8px 0;
+  & > * {
+    margin-right: 4px;
   }
 }

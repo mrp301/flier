@@ -1,6 +1,14 @@
-.l-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
+.l-header-logo {
+  float: left;
+  padding: 3px 10px;
+}
+
+.l-header-btn-container {
+  float: right;
+  padding: 6px 5px 0 0;
+  float: right;
+}
+
+.l-header-nav {
+  display: flex;
 }
