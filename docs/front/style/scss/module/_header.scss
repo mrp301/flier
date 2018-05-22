@@ -6,31 +6,4 @@
     width: 100px;
     height: 44px;
   }
-
-  .header-nav {
-    border-top: solid 1px #1d4d88;
-    border-bottom: solid 1px #1d4d88;
-    background-color: #3069b0;
-
-    .header-nav-item {
-      display: block;
-      padding: 9px 0;
-      text-align: center;
-      font-size: 1.4rem;
-      color: #fff;
-      font-weight: bold;
-      border-right: solid 1px #1d4d88;
-
-      &:last-child() {
-        border-right: none;
-      }
-
-      .header-nav-item-icon {
-        margin-right: 6px;
-        color: #8ab1e3;
-        font-size: 24px;
-        vertical-align: middle;
-      }
-    }
-  }
 }
