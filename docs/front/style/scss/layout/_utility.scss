@@ -32,8 +32,12 @@
   width: 100% !important;
 }
 
-.l-half > * {
-  width: 50%;
+.l-half {
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
 }
 
 .l-bottom-xlarge {
