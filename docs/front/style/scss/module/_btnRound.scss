@@ -1,0 +1,20 @@
+.btnRound {
+  display: inline-block;
+  text-align: center;
+  color: #293c6f;
+  border: 1px solid transparent;
+  border-radius: 52px;
+
+  &.btnRound-anchor {
+    background-color: #f3f6fa;
+    border-color: #d9e2ed;
+    padding: 7px 10px;
+  }
+
+  &.btnRound-accordion {
+    font-size: 1.4rem;
+    border-color: #d9e2ed;
+    background-color: #e7edf5;
+    padding: 12px 30px;
+  }
+}

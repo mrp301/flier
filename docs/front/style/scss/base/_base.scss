@@ -4,16 +4,17 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  box-sizing: border-box;
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #333;
 }
 
-.contents {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: #666;
-  margin: 48px auto 0;
-  max-width: 700px;
+* {
+  box-sizing: border-box;
 }
 
 a {

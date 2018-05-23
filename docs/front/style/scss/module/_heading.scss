@@ -4,13 +4,26 @@
   padding: 16px;
   font-size: 20px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .subhead {
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 36px;
 
+  &.subhead-article {
+    background: linear-gradient(transparent 76%, #feeec2 0%);
+  }
+
+  &.subhead-aside {
+    background: linear-gradient(transparent 76%, #baece0 0%);
+  }
 }
 
 .crosshead {
-
+  color: #34a0ad;
+  font-size: 1.8rem;
+  font-weight: 500;
 }

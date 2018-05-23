@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,15 +52,14 @@ figure {
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #333; }
+
 * {
   box-sizing: border-box; }
-
-.contents {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: #666;
-  margin: 48px auto 0;
-  max-width: 700px; }
 
 a {
   text-decoration: none; }
@@ -143,12 +143,7 @@ i {
 
 .anchor-outside {
   color: #293c6f;
-  font-size: 1.2rem;
-  line-height: 28px;
-  background-color: #f3f6fa;
-  border: 1px solid #d9e2ed;
-  border-radius: 52px;
-  padding: 7px 10px; }
+  font-size: 1.2rem; }
   .anchor-outside::after {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
@@ -159,18 +154,19 @@ i {
 
 .btn {
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: solid 2px transparent;
+  border-radius: 4px; }
   .btn.btn-login {
     width: 90px;
     height: 40px;
     padding: 0 6px;
     line-height: 38px;
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-radius: 4px;
-    color: #fff;
+    font-size: 1.3rem;
     background-color: #1ea0c5;
-    border-bottom: solid 2px #137692; }
+    border-color: #137692; }
     .btn.btn-login::before {
       font-family: "Font Awesome 5 Free";
       font-weight: bold;
@@ -184,12 +180,9 @@ i {
     height: 40px;
     padding: 0 6px;
     line-height: 38px;
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-radius: 4px;
-    color: #fff;
+    font-size: 1.3rem;
     background-color: #ef534b;
-    border-bottom: solid 2px #a0403b; }
+    border-color: #a0403b; }
     .btn.btn-entry::before {
       font-family: "Font Awesome 5 Free";
       font-weight: bold;
@@ -201,11 +194,9 @@ i {
   .btn.btn-arrow {
     position: relative;
     background-color: #293c6f;
-    border-bottom: 2px solid #0d1733;
-    color: #fff;
-    font-size: 14px;
+    border-color: #0d1733;
     padding: 17px 31px;
-    border-radius: 4px; }
+    font-size: 1.4rem; }
     .btn.btn-arrow::after {
       position: absolute;
       right: 10px;
@@ -216,14 +207,22 @@ i {
       vertical-align: middle;
       font-size: 1.5rem;
       color: #fff; }
-  .btn.btn-accordion {
-    color: #293c6f;
+
+.btnRound {
+  display: inline-block;
+  text-align: center;
+  color: #293c6f;
+  border: 1px solid transparent;
+  border-radius: 52px; }
+  .btnRound.btnRound-anchor {
+    background-color: #f3f6fa;
+    border-color: #d9e2ed;
+    padding: 7px 10px; }
+  .btnRound.btnRound-accordion {
     font-size: 1.4rem;
-    line-height: 28px;
+    border-color: #d9e2ed;
     background-color: #e7edf5;
-    border: 1px solid #d9e2ed;
-    border-radius: 52px;
-    padding: 8px 30px; }
+    padding: 12px 30px; }
 
 .header {
   width: 100%;
@@ -238,7 +237,22 @@ i {
   padding: 16px;
   font-size: 20px;
   color: #fff;
-  font-weight: bold; }
+  font-weight: 500; }
+
+.subhead {
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 36px; }
+  .subhead.subhead-article {
+    background: linear-gradient(transparent 76%, #feeec2 0%); }
+  .subhead.subhead-aside {
+    background: linear-gradient(transparent 76%, #baece0 0%); }
+
+.crosshead {
+  color: #34a0ad;
+  font-size: 1.8rem;
+  font-weight: 500; }
 
 .label {
   display: inline-block;
@@ -265,9 +279,9 @@ i {
     text-align: center;
     font-size: 1.4rem;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     border-right: solid 1px #1d4d88; }
-    .nav .nav-item:last-child {
+    .nav .nav-item:last-child() {
       border-right: none; }
     .nav .nav-item .nav-item-icon {
       margin-right: 6px;

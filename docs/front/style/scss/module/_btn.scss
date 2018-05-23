@@ -1,19 +1,19 @@
 .btn {
   display: inline-block;
   text-align: center;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: solid 2px transparent;
+  border-radius: 4px;
 
   &.btn-login {
     width: 90px;
     height: 40px;
     padding: 0 6px;
     line-height: 38px;
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-radius: 4px;
-
-    color: #fff;
+    font-size: 1.3rem;
     background-color: #1ea0c5;
-    border-bottom: solid 2px #137692;
+    border-color: #137692;
 
     &::before {
       font-family: "Font Awesome 5 Free";
@@ -31,13 +31,9 @@
     height: 40px;
     padding: 0 6px;
     line-height: 38px;
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-radius: 4px;
-
-    color: #fff;
+    font-size: 1.3rem;
     background-color: #ef534b;
-    border-bottom: solid 2px #a0403b;
+    border-color: #a0403b;
 
     &::before {
       font-family: "Font Awesome 5 Free";
@@ -53,11 +49,9 @@
   &.btn-arrow {
     position: relative;
     background-color: #293c6f;
-    border-bottom: 2px solid #0d1733;
-    color: #fff;
-    font-size: 14px;
+    border-color: #0d1733;
     padding: 17px 31px;
-    border-radius: 4px;
+    font-size: 1.4rem;
 
     &::after {
       position: absolute;
@@ -70,15 +64,5 @@
       font-size: 1.5rem;
       color: #fff;
     }
-  }
-
-  &.btn-accordion {
-    color: #293c6f;
-    font-size: 1.4rem;
-    line-height: 28px;
-    background-color: #e7edf5;
-    border: 1px solid #d9e2ed;
-    border-radius: 52px;
-    padding: 8px 30px;
   }
 }
