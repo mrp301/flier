@@ -1,10 +1,30 @@
 //[wip]まだ仮状態です。
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../font/NotoSansCJKjp-Thin.woff')format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../../font/NotoSansCJKjp-Light.woff')format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../font/NotoSansCJKjp-Medium.woff')format("woff");
+}
+
 
 html {
   font-size: 62.5%;
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
@@ -30,4 +50,15 @@ a {
 i {
   color: #d0d0d0;
   font-size: 2rem;
+}
+
+.article {
+  padding: 10px;
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 1.8em;
+    text-indent: 1em;
+    text-align: justify;
+  }
 }
