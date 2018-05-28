@@ -1,0 +1,17 @@
+.book {
+  padding: 0 10px;
+  line-height: 1.2;
+  font-size: 1.4rem;
+
+  .book-thumbnail {
+    width: 31.5%;
+    height: 100%;
+    margin-right: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+  }
+
+  .book-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

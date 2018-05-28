@@ -128,6 +128,9 @@ i {
   .l-half > * {
     width: 50%; }
 
+.l-flex {
+  display: flex; }
+
 .l-bottom-xlarge {
   margin-bottom: 60px !important; }
 
@@ -168,6 +171,19 @@ i {
     margin-left: 7px;
     font-size: 1.4rem;
     color: #293c6f; }
+
+.book {
+  padding: 0 10px;
+  line-height: 1.2;
+  font-size: 1.4rem; }
+  .book .book-thumbnail {
+    width: 31.5%;
+    height: 100%;
+    margin-right: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+  .book .book-title {
+    font-size: 2rem;
+    font-weight: 500; }
 
 .btn {
   display: inline-block;
