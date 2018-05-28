@@ -1,0 +1,9 @@
+.section {
+  padding: 0 10px;
+
+  .section-text > * {
+    line-height: 1.8;
+    margin-bottom: 1.8em;
+    text-indent: 1em;
+  }
+}

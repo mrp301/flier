@@ -85,14 +85,6 @@ i {
   color: #d0d0d0;
   font-size: 2rem; }
 
-.article {
-  padding: 10px; }
-  .article p {
-    line-height: 1.8;
-    margin-bottom: 1.8em;
-    text-indent: 1em;
-    text-align: justify; }
-
 .l-header-logo {
   float: left;
   padding: 3px 10px; }
@@ -313,3 +305,10 @@ i {
       color: #8ab1e3;
       font-size: 24px;
       vertical-align: middle; }
+
+.section {
+  padding: 0 10px; }
+  .section .section-text > * {
+    line-height: 1.8;
+    margin-bottom: 1.8em;
+    text-indent: 1em; }
