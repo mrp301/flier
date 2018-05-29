@@ -1,0 +1,17 @@
+.l-logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 266px;
+  margin: 0 auto;
+
+
+   li {
+     margin-right: 4px;
+     margin-bottom: 4px;
+
+     &:nth-child(5n) {
+       margin-right: 0;
+     }
+   }
+}

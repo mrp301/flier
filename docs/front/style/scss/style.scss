@@ -3,19 +3,28 @@
 @import './base/_base';
 
 //layout
+@import './layout/_btnRound';
 @import './layout/_header';
 @import './layout/_label';
+@import './layout/_logo';
+@import './layout/_review';
+@import './layout/_text';
 @import './layout/_utility';
 
 //module
 @import './module/_anchor';
+@import './module/_article';
 @import './module/_book';
+@import './module/_border';
 @import './module/_btn';
 @import './module/_btnRound';
+@import './module/_copyright';
 @import './module/_footer';
 @import './module/_header';
 @import './module/_heading';
 @import './module/_label';
+@import './module/_logo';
 @import './module/_nav';
-@import './module/_section';
+@import './module/_review';
 @import './module/_sns';
+@import './module/_text';

@@ -1,0 +1,25 @@
+.l-review {
+  display: flex;
+  margin-bottom: 8px;
+
+  .l-review-score-container {
+    width: 80px;
+    text-align: center;
+  }
+
+  .l-review-star-container {
+    margin-top: 6px;
+
+    .l-review-star > * {
+      margin-right: 6px;
+
+      &:last-child() {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &:last-child(){
+    margin-bottom: 0;
+  }
+}

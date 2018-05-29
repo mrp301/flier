@@ -85,6 +85,15 @@ i {
   color: #d0d0d0;
   font-size: 2rem; }
 
+.is-hide {
+  display: none; }
+
+.is-active {
+  display: block; }
+
+.l-btnRound {
+  margin-left: 10px; }
+
 .l-header-logo {
   float: left;
   padding: 3px 10px; }
@@ -96,6 +105,39 @@ i {
 
 .l-label-container > * {
   margin-right: 4px; }
+
+.l-logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 266px;
+  margin: 0 auto; }
+  .l-logo-container li {
+    margin-right: 4px;
+    margin-bottom: 4px; }
+    .l-logo-container li:nth-child(5n) {
+      margin-right: 0; }
+
+.l-review {
+  display: flex;
+  margin-bottom: 8px; }
+  .l-review .l-review-score-container {
+    width: 80px;
+    text-align: center; }
+  .l-review .l-review-star-container {
+    margin-top: 6px; }
+    .l-review .l-review-star-container .l-review-star > * {
+      margin-right: 6px; }
+      .l-review .l-review-star-container .l-review-star > *:last-child() {
+        margin-right: 0; }
+  .l-review:last-child() {
+    margin-bottom: 0; }
+
+.l-text-indent {
+  text-indent: 1em; }
+
+.l-text-bottom {
+  margin-bottom: 1.5em; }
 
 .l-left {
   float: left; }
@@ -151,19 +193,21 @@ i {
 
 .anchor-arrow {
   color: #2dacdb;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  line-height: 2.2; }
   .anchor-arrow::after {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     content: '\f105';
     margin-left: 2px;
-    vertical-align: middle;
     font-size: 1.5rem;
     color: #fe8d42; }
 
 .anchor-outside {
   color: #293c6f;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  line-height: 12px;
+  font-weight: 500; }
   .anchor-outside::after {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
@@ -171,6 +215,11 @@ i {
     margin-left: 7px;
     font-size: 1.4rem;
     color: #293c6f; }
+
+.article {
+  padding: 0 10px;
+  line-height: 1.8;
+  text-align: justify; }
 
 .book {
   padding: 0 10px;
@@ -184,6 +233,16 @@ i {
   .book .book-title {
     font-size: 2rem;
     font-weight: 500; }
+  .book .book-info dt,
+  .book .book-info dd {
+    font-size: 15px;
+    line-height: 2.2; }
+
+.border-bottom {
+  border-bottom: solid 1px #e6e6e6; }
+
+.border-bottom-bold {
+  border-bottom: solid 2px #e6e6e6; }
 
 .btn {
   display: inline-block;
@@ -244,6 +303,8 @@ i {
 .btnRound {
   display: inline-block;
   text-align: center;
+  font-weight: 500;
+  line-height: 1;
   color: #293c6f;
   border: 1px solid transparent;
   border-radius: 52px; }
@@ -256,6 +317,12 @@ i {
     border-color: #d9e2ed;
     background-color: #e7edf5;
     padding: 12px 30px; }
+
+.copyright {
+  padding: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #f6f9fb; }
 
 .header {
   width: 100%;
@@ -302,6 +369,13 @@ i {
     color: #fff;
     background-color: #bfbebe; }
 
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #e3e3e3;
+  background-color: #fff; }
+
 .nav {
   border-top: solid 1px #1d4d88;
   border-bottom: solid 1px #1d4d88;
@@ -322,9 +396,32 @@ i {
       font-size: 24px;
       vertical-align: middle; }
 
-.section {
-  padding: 0 10px; }
-  .section .section-text > * {
-    line-height: 1.8;
-    margin-bottom: 1.8em;
-    text-indent: 1em; }
+.review-container {
+  position: relative;
+  width: 100%;
+  padding: 15px 10px 10px;
+  background-color: #f5f5f5;
+  font-size: 1.4rem;
+  line-height: 1; }
+  .review-container::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 4px;
+    background-color: #4686ce; }
+  .review-container .review-score {
+    font-size: 1.8rem;
+    color: #005bab; }
+  .review-container .review-star {
+    width: 20px;
+    height: 20px; }
+
+.text-strong {
+  font-weight: 500; }
+
+.text-head {
+  line-height: 1.8;
+  font-size: 1.7rem; }
