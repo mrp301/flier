@@ -1,0 +1,31 @@
+.footer {
+  line-height: 1.8;
+  color: #fff;
+  background-color: #232739;
+
+  .footer-logo {
+    padding: 10px 0;
+    width: 50px;
+  }
+
+  .footer-nav {
+    padding: 0 10px;
+    border-top: 1px solid #3a3e52;
+
+    .footer-nav-item {
+      display: block;
+      font-size: 1.4rem;
+      padding: 10px 0;
+      border-bottom: 1px solid #3a3e52;
+
+      &:last-child() {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-size: 1.2rem;
+    padding: 10px 10px 20px;
+  }
+}

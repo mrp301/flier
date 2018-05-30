@@ -91,6 +91,10 @@ i {
 .is-active {
   display: block; }
 
+.contents {
+  max-width: 600px;
+  margin: 0 auto; }
+
 .l-btnRound {
   margin-left: 10px; }
 
@@ -323,6 +327,27 @@ i {
   font-size: 1.4rem;
   text-align: center;
   background-color: #f6f9fb; }
+
+.footer {
+  line-height: 1.8;
+  color: #fff;
+  background-color: #232739; }
+  .footer .footer-logo {
+    padding: 10px 0;
+    width: 50px; }
+  .footer .footer-nav {
+    padding: 0 10px;
+    border-top: 1px solid #3a3e52; }
+    .footer .footer-nav .footer-nav-item {
+      display: block;
+      font-size: 1.4rem;
+      padding: 10px 0;
+      border-bottom: 1px solid #3a3e52; }
+      .footer .footer-nav .footer-nav-item:last-child() {
+        border-bottom: none; }
+  .footer .footer-copyright {
+    font-size: 1.2rem;
+    padding: 10px 10px 20px; }
 
 .header {
   width: 100%;
