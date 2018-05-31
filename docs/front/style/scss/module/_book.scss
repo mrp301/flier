@@ -13,6 +13,15 @@
   .book-title {
     font-size: 2rem;
     font-weight: 500;
+
+    &.book-title-small {
+      font-size: 1.5rem;
+    }
+  }
+
+  .book-writer {
+    font-size: 1.3rem;
+    color: #6e97b1;
   }
 
   .book-info {

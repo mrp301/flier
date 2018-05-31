@@ -1,0 +1,17 @@
+.media {
+  width: 100%;
+  margin-right: 16px;
+
+  .media-title {
+    font-size: 1.4rem;
+  }
+
+  .media-time {
+    font-size: 1.2rem;
+    color: #989898;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}

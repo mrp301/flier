@@ -122,6 +122,11 @@ i {
     .l-logo-container li:nth-child(5n) {
       margin-right: 0; }
 
+.l-media {
+  display: flex;
+  margin-bottom: 32px;
+  padding: 0 10px; }
+
 .l-review {
   display: flex;
   margin-bottom: 8px; }
@@ -177,23 +182,26 @@ i {
 .l-flex {
   display: flex; }
 
-.l-bottom-xlarge {
-  margin-bottom: 60px !important; }
-
-.l-bottom-large {
+.l-bottom-xxlarge {
   margin-bottom: 50px !important; }
 
-.l-bottom-midium {
+.l-bottom-xlarge {
   margin-bottom: 40px !important; }
 
-.l-bottom-small {
+.l-bottom-large {
   margin-bottom: 30px !important; }
 
-.l-bottom-xsmall {
+.l-bottom-midium {
   margin-bottom: 20px !important; }
 
-.l-bottom-xxsmall {
+.l-bottom-small {
+  margin-bottom: 16px !important; }
+
+.l-bottom-xsmall {
   margin-bottom: 10px !important; }
+
+.l-bottom-xxsmall {
+  margin-bottom: 8px !important; }
 
 .anchor-arrow {
   color: #2dacdb;
@@ -237,6 +245,11 @@ i {
   .book .book-title {
     font-size: 2rem;
     font-weight: 500; }
+    .book .book-title.book-title-small {
+      font-size: 1.5rem; }
+  .book .book-writer {
+    font-size: 1.3rem;
+    color: #6e97b1; }
   .book .book-info dt,
   .book .book-info dd {
     font-size: 15px;
@@ -401,6 +414,17 @@ i {
   border: solid 1px #e3e3e3;
   background-color: #fff; }
 
+.media {
+  width: 100%;
+  margin-right: 16px; }
+  .media .media-title {
+    font-size: 1.4rem; }
+  .media .media-time {
+    font-size: 1.2rem;
+    color: #989898; }
+  .media:nth-child(2n) {
+    margin-right: 0; }
+
 .nav {
   border-top: solid 1px #1d4d88;
   border-bottom: solid 1px #1d4d88;
@@ -450,3 +474,6 @@ i {
 .text-head {
   line-height: 1.8;
   font-size: 1.7rem; }
+
+.thumbnail-shadow {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
