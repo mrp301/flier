@@ -1,0 +1,10 @@
+.l-footer {
+  position: relative;
+  margin-top: 70px;
+
+  .l-footer-pageTop {
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+  }
+}

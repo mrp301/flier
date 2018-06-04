@@ -1,0 +1,20 @@
+.writer {
+
+  .writer-thumbnail {
+    width: 48px;
+    height: 48px;
+  }
+
+  .writer-body {
+    padding-left: 10px;
+
+    .writer-name {
+      line-height: 1.8;
+    }
+
+    .writer-detail {
+      line-height: 1.8;
+      font-size: 1.4rem;
+    }
+  }
+}

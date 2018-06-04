@@ -98,6 +98,17 @@ i {
 .l-btnRound {
   margin-left: 10px; }
 
+.l-container {
+  padding: 0 10px; }
+
+.l-footer {
+  position: relative;
+  margin-top: 70px; }
+  .l-footer .l-footer-pageTop {
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px); }
+
 .l-header-logo {
   float: left;
   padding: 3px 10px; }
@@ -124,8 +135,7 @@ i {
 
 .l-media {
   display: flex;
-  margin-bottom: 32px;
-  padding: 0 10px; }
+  margin-bottom: 32px; }
 
 .l-review {
   display: flex;
@@ -141,6 +151,16 @@ i {
         margin-right: 0; }
   .l-review:last-child() {
     margin-bottom: 0; }
+
+.l-sns {
+  display: flex; }
+  .l-sns.l-sns-center {
+    justify-content: center; }
+  .l-sns li {
+    margin-right: 5px;
+    line-height: 0; }
+    .l-sns li:last-child() {
+      margin-right: 0; }
 
 .l-text-indent {
   text-indent: 1em; }
@@ -229,31 +249,55 @@ i {
     color: #293c6f; }
 
 .article {
-  padding: 0 10px;
   line-height: 1.8;
   text-align: justify; }
 
 .book {
-  padding: 0 10px;
   line-height: 1.2;
   font-size: 1.4rem; }
   .book .book-thumbnail {
     width: 31.5%;
     height: 100%;
-    margin-right: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+    margin-right: 20px; }
+    .book .book-thumbnail.book-thumbnail-ranking {
+      position: relative;
+      margin-left: 12px;
+      width: 36%; }
+  .book .book-body {
+    width: 45%; }
   .book .book-title {
     font-size: 2rem;
     font-weight: 500; }
     .book .book-title.book-title-small {
       font-size: 1.5rem; }
   .book .book-writer {
-    font-size: 1.3rem;
-    color: #6e97b1; }
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #6e97b1;
+    padding: 0 8px;
+    background-color: #eef2fb; }
   .book .book-info dt,
   .book .book-info dd {
     font-size: 15px;
     line-height: 2.2; }
+  .book .book-label {
+    display: inline-block;
+    width: 40px;
+    padding: 5px 4px;
+    font-size: 1rem;
+    border: solid 1px transparent; }
+    .book .book-label.book-label-language {
+      border-color: #3c6ea6;
+      color: #3c6ea6;
+      background-color: #fff; }
+    .book .book-label.book-label-free {
+      border-color: #1ea0c5;
+      color: #fff;
+      background-color: #1ea0c5; }
+    .book .book-label.book-label-unread {
+      border-color: #bfbebe;
+      color: #fff;
+      background-color: #bfbebe; }
 
 .border-bottom {
   border-bottom: solid 1px #e6e6e6; }
@@ -342,25 +386,51 @@ i {
   background-color: #f6f9fb; }
 
 .footer {
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #fff;
   background-color: #232739; }
+  .footer .footer-pageTop {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+    background-color: #232739; }
+    .footer .footer-pageTop::before, .footer .footer-pageTop::after {
+      position: absolute;
+      content: ''; }
+    .footer .footer-pageTop::before {
+      width: 16px;
+      height: 16px;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 24px;
+      left: calc(50% - 8px); }
+    .footer .footer-pageTop::after {
+      width: 22px;
+      border-top: solid 2px #fff;
+      top: 12px;
+      left: calc(50% - 11px); }
   .footer .footer-logo {
-    padding: 10px 0;
-    width: 50px; }
+    padding: 10px 0 6px;
+    width: 50px;
+    line-height: 0; }
   .footer .footer-nav {
     padding: 0 10px;
     border-top: 1px solid #3a3e52; }
     .footer .footer-nav .footer-nav-item {
       display: block;
-      font-size: 1.4rem;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52; }
-      .footer .footer-nav .footer-nav-item:last-child() {
+      .footer .footer-nav .footer-nav-item:last-child {
         border-bottom: none; }
   .footer .footer-copyright {
     font-size: 1.2rem;
-    padding: 10px 10px 20px; }
+    padding: 10px 10px 20px;
+    border-top: solid 1px #3a3e52; }
 
 .header {
   width: 100%;
@@ -394,18 +464,11 @@ i {
 
 .label {
   display: inline-block;
-  width: 40px;
-  padding: 5px 4px;
-  font-size: 1rem;
-  border: solid 1px transparent; }
-  .label.label-language {
-    border-color: #3c6ea6;
-    color: #3c6ea6;
-    background-color: #fff; }
-  .label.label-unread {
-    border-color: #bfbebe;
-    color: #fff;
-    background-color: #bfbebe; }
+  padding: 0 8px;
+  font-size: 1.4rem;
+  line-height: 2.2;
+  color: #50608b;
+  background-color: #eef2fb; }
 
 .logo {
   display: inline-block;
@@ -445,6 +508,40 @@ i {
       font-size: 24px;
       vertical-align: middle; }
 
+.panel-container {
+  margin: 0 20px;
+  border: 4px solid #fd8637;
+  background-color: #f9f8f3; }
+  .panel-container .panel {
+    margin: 2px;
+    padding: 20px;
+    border: 1px solid #fd8637; }
+
+.ranking-badge {
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  width: 30px;
+  height: 40px; }
+  .ranking-badge .ranking-badge-text {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    color: #fff;
+    font-size: 1.5rem; }
+
+.ranking-badge-first {
+  background-image: url("../../../img/ranking-gold.png");
+  background-size: contain; }
+
+.ranking-badge-second {
+  background-image: url("../../../img/ranking-silver.png");
+  background-size: contain; }
+
+.ranking-badge-third {
+  background-image: url("../../../img/ranking-bronze.png");
+  background-size: contain; }
+
 .review-container {
   position: relative;
   width: 100%;
@@ -468,6 +565,11 @@ i {
     width: 20px;
     height: 20px; }
 
+.sns {
+  display: inline-block;
+  width: 30px;
+  height: 30px; }
+
 .text-strong {
   font-weight: 500; }
 
@@ -477,3 +579,19 @@ i {
 
 .thumbnail-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+
+.thumbnail-flame {
+  border: 1px solid #e3e3e3;
+  padding: 1px; }
+
+.writer .writer-thumbnail {
+  width: 48px;
+  height: 48px; }
+
+.writer .writer-body {
+  padding-left: 10px; }
+  .writer .writer-body .writer-name {
+    line-height: 1.8; }
+  .writer .writer-body .writer-detail {
+    line-height: 1.8;
+    font-size: 1.4rem; }

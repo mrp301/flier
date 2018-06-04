@@ -1,0 +1,16 @@
+.l-sns {
+  display: flex;
+
+  &.l-sns-center {
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 5px;
+    line-height: 0;
+
+    &:last-child() {
+      margin-right: 0;
+    }
+  }
+}

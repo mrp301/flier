@@ -1,0 +1,30 @@
+.ranking-badge {
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  width: 30px;
+  height: 40px;
+
+  .ranking-badge-text {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+.ranking-badge-first {
+  background-image: url('../../../img/ranking-gold.png');
+  background-size: contain;
+}
+
+.ranking-badge-second {
+  background-image: url('../../../img/ranking-silver.png');
+  background-size: contain;
+}
+
+.ranking-badge-third {
+  background-image: url('../../../img/ranking-bronze.png');
+  background-size: contain;
+}

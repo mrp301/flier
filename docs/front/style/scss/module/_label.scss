@@ -1,19 +1,8 @@
 .label {
   display: inline-block;
-  width: 40px;
-  padding: 5px 4px;
-  font-size: 1rem;
-  border: solid 1px transparent;
-
-  &.label-language {
-    border-color: #3c6ea6;
-    color: #3c6ea6;
-    background-color: #fff;
-  }
-
-  &.label-unread {
-    border-color: #bfbebe;
-    color: #fff;
-    background-color: #bfbebe;
-  }
+  padding: 0 8px;
+  font-size: 1.4rem;
+  line-height: 2.2;
+  color: #50608b;
+  background-color: #eef2fb;
 }

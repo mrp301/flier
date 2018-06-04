@@ -1,11 +1,45 @@
 .footer {
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #fff;
   background-color: #232739;
 
+  .footer-pageTop {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+    background-color: #232739;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
+      transform: rotate(-45deg);
+      top: 24px;
+      left: calc(50% - 8px);
+    }
+
+    &::after {
+      width: 22px;
+      border-top: solid 2px #fff;
+      top: 12px;
+      left: calc(50% - 11px);
+    }
+  }
+
   .footer-logo {
-    padding: 10px 0;
+    padding: 10px 0 6px;
     width: 50px;
+    line-height: 0;
   }
 
   .footer-nav {
@@ -14,11 +48,10 @@
 
     .footer-nav-item {
       display: block;
-      font-size: 1.4rem;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52;
 
-      &:last-child() {
+      &:last-child {
         border-bottom: none;
       }
     }
@@ -27,5 +60,6 @@
   .footer-copyright {
     font-size: 1.2rem;
     padding: 10px 10px 20px;
+    border-top: solid 1px #3a3e52;
   }
 }
