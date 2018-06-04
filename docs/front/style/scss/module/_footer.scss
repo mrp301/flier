@@ -4,6 +4,10 @@
   color: #fff;
   background-color: #232739;
 
+  a {
+    color: #fff;
+  }
+
   .footer-pageTop {
     position: relative;
     display: block;
@@ -43,13 +47,21 @@
   }
 
   .footer-nav {
-    padding: 0 10px;
     border-top: 1px solid #3a3e52;
 
     .footer-nav-item {
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52;
+
+      &.footer-nav-item-accordion {
+        padding-left: 30px;
+
+        &:first-child {
+          margin-top: 10px;
+          border-top: 1px solid #3a3e52;
+        }
+      }
 
       &:last-child {
         border-bottom: none;
@@ -63,3 +75,5 @@
     border-top: solid 1px #3a3e52;
   }
 }
+
+//f067

@@ -1,28 +1,35 @@
-.headline {
+.heading-headline {
   background-color: #4a85c7;
   border-left: 10px solid #295d97;
   padding: 16px;
   font-size: 20px;
   color: #fff;
   font-weight: 500;
+  line-height: 1.4;
 }
 
-.subhead {
+.heading-subhead {
   color: #000;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 36px;
 
-  &.subhead-article {
+  &.heading-subhead-article {
     background: linear-gradient(transparent 76%, #feeec2 0%);
   }
 
-  &.subhead-aside {
+  &.heading-subhead-aside {
     background: linear-gradient(transparent 76%, #baece0 0%);
   }
 }
 
-.crosshead {
+.heading-ruby {
+  font-size: 1.3rem;
+  color: #005bab;
+  font-weight: 500;
+}
+
+.heading-crosshead {
   color: #34a0ad;
   font-size: 1.8rem;
   font-weight: 500;

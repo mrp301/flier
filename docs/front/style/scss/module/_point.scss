@@ -1,0 +1,15 @@
+.point-label {
+  padding: 9px 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: solid 1px #34a0ad;
+  font-size: 1.2rem;
+  color: #34a0ad;
+  line-height: 1.2;
+  text-align: center;
+
+  .point-label-number {
+    font-size: 1.8rem;
+  }
+}

@@ -5,7 +5,26 @@
 
   .panel {
     margin: 2px;
-    padding: 20px;
+    padding: 38px 20px 20px;
     border: 1px solid #fd8637;
+
+    .panel-text {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      text-align: center;
+
+      .panel-text-emphasis {
+        color: #fd8637;
+      }
+    }
+
+    .panel-logo {
+      width: 100px;
+      height: 47px;
+    }
+
+    .panel-botder-bottom {
+      border-bottom: solid 1px #fd8637;
+    }
   }
 }

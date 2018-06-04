@@ -39,12 +39,7 @@ body {
 
 a {
   text-decoration: none;
-
-  &:link {
-  }
-
-  &:visited {
- }
+  color: #2dacdb;
 }
 
 i {
@@ -64,14 +59,3 @@ i {
   max-width: 600px;
   margin: 0 auto;
 }
-//
-// .article {
-//   padding: 10px;
-//
-//   p {
-//     line-height: 1.8;
-//     margin-bottom: 1.8em;
-//     text-indent: 1em;
-//     text-align: justify;
-//   }
-// }

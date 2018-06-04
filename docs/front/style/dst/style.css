@@ -79,7 +79,8 @@ body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2dacdb; }
 
 i {
   color: #d0d0d0;
@@ -136,6 +137,29 @@ i {
 .l-media {
   display: flex;
   margin-bottom: 32px; }
+
+.l-panelLogo-container {
+  position: relative;
+  margin-right: 110px; }
+  .l-panelLogo-container .l-panelLogo {
+    position: absolute;
+    top: -16px; }
+
+.l-point {
+  position: relative;
+  padding: 0 0 14px 60px;
+  margin-bottom: 14px; }
+  .l-point .l-point-label {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 27.5px); }
+
+.l-readmore-container {
+  position: relative; }
+  .l-readmore-container .l-readmore {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
 
 .l-review {
   display: flex;
@@ -256,16 +280,22 @@ i {
   line-height: 1.2;
   font-size: 1.4rem; }
   .book .book-thumbnail {
-    width: 31.5%;
-    height: 100%;
-    margin-right: 20px; }
+    padding-right: 20px;
+    width: 38%; }
+    .book .book-thumbnail.book-thumbnail-media {
+      padding: 0 30px;
+      margin: 0 auto;
+      width: 100%; }
     .book .book-thumbnail.book-thumbnail-ranking {
       position: relative;
-      margin-left: 12px;
-      width: 36%; }
+      padding-left: 12px;
+      width: 45%; }
   .book .book-body {
-    width: 45%; }
+    width: 62%; }
+    .book .book-body.book-body-ranking {
+      width: 55%; }
   .book .book-title {
+    color: #333;
     font-size: 2rem;
     font-weight: 500; }
     .book .book-title.book-title-small {
@@ -273,9 +303,16 @@ i {
   .book .book-writer {
     display: inline-block;
     font-size: 1.4rem;
-    color: #6e97b1;
+    color: #50608b;
     padding: 0 8px;
-    background-color: #eef2fb; }
+    background-color: #eef2fb;
+    line-height: 1.4; }
+    .book .book-writer.book-writer-ranking {
+      font-size: 1.3rem;
+      color: #6e97b1;
+      line-height: 1.4;
+      padding: 0;
+      background-color: #fff; }
   .book .book-info dt,
   .book .book-info dd {
     font-size: 15px;
@@ -382,7 +419,6 @@ i {
 .copyright {
   padding: 20px;
   font-size: 1.4rem;
-  text-align: center;
   background-color: #f6f9fb; }
 
 .footer {
@@ -390,6 +426,8 @@ i {
   line-height: 1.8;
   color: #fff;
   background-color: #232739; }
+  .footer a {
+    color: #fff; }
   .footer .footer-pageTop {
     position: relative;
     display: block;
@@ -419,12 +457,16 @@ i {
     width: 50px;
     line-height: 0; }
   .footer .footer-nav {
-    padding: 0 10px;
     border-top: 1px solid #3a3e52; }
     .footer .footer-nav .footer-nav-item {
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52; }
+      .footer .footer-nav .footer-nav-item.footer-nav-item-accordion {
+        padding-left: 30px; }
+        .footer .footer-nav .footer-nav-item.footer-nav-item-accordion:first-child {
+          margin-top: 10px;
+          border-top: 1px solid #3a3e52; }
       .footer .footer-nav .footer-nav-item:last-child {
         border-bottom: none; }
   .footer .footer-copyright {
@@ -439,25 +481,31 @@ i {
     width: 100px;
     height: 44px; }
 
-.headline {
+.heading-headline {
   background-color: #4a85c7;
   border-left: 10px solid #295d97;
   padding: 16px;
   font-size: 20px;
   color: #fff;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.4; }
 
-.subhead {
+.heading-subhead {
   color: #000;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 36px; }
-  .subhead.subhead-article {
+  .heading-subhead.heading-subhead-article {
     background: linear-gradient(transparent 76%, #feeec2 0%); }
-  .subhead.subhead-aside {
+  .heading-subhead.heading-subhead-aside {
     background: linear-gradient(transparent 76%, #baece0 0%); }
 
-.crosshead {
+.heading-ruby {
+  font-size: 1.3rem;
+  color: #005bab;
+  font-weight: 500; }
+
+.heading-crosshead {
   color: #34a0ad;
   font-size: 1.8rem;
   font-weight: 500; }
@@ -514,13 +562,37 @@ i {
   background-color: #f9f8f3; }
   .panel-container .panel {
     margin: 2px;
-    padding: 20px;
+    padding: 38px 20px 20px;
     border: 1px solid #fd8637; }
+    .panel-container .panel .panel-text {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      text-align: center; }
+      .panel-container .panel .panel-text .panel-text-emphasis {
+        color: #fd8637; }
+    .panel-container .panel .panel-logo {
+      width: 100px;
+      height: 47px; }
+    .panel-container .panel .panel-botder-bottom {
+      border-bottom: solid 1px #fd8637; }
+
+.point-label {
+  padding: 9px 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: solid 1px #34a0ad;
+  font-size: 1.2rem;
+  color: #34a0ad;
+  line-height: 1.2;
+  text-align: center; }
+  .point-label .point-label-number {
+    font-size: 1.8rem; }
 
 .ranking-badge {
   position: absolute;
-  top: -15px;
-  left: -12px;
+  top: -13px;
+  left: 0;
   width: 30px;
   height: 40px; }
   .ranking-badge .ranking-badge-text {
@@ -583,6 +655,11 @@ i {
 .thumbnail-flame {
   border: 1px solid #e3e3e3;
   padding: 1px; }
+
+.thumbnail-subText {
+  color: #999;
+  line-height: 0;
+  font-size: 1.2rem; }
 
 .writer .writer-thumbnail {
   width: 48px;

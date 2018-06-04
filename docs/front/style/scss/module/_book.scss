@@ -3,22 +3,32 @@
   font-size: 1.4rem;
 
   .book-thumbnail {
-    width: 31.5%;
-    height: 100%;
-    margin-right: 20px;
+    padding-right: 20px;
+    width: 38%;
+
+    &.book-thumbnail-media {
+      padding: 0 30px;
+      margin: 0 auto;
+      width: 100%;
+    }
 
     &.book-thumbnail-ranking {
       position: relative;
-      margin-left: 12px;
-      width: 36%;
+      padding-left: 12px;
+      width: 45%;
     }
   }
 
   .book-body {
-    width: 45%;
+    width: 62%;
+
+    &.book-body-ranking {
+      width: 55%;
+    }
   }
 
   .book-title {
+    color: #333;
     font-size: 2rem;
     font-weight: 500;
 
@@ -30,9 +40,18 @@
   .book-writer {
     display: inline-block;
     font-size: 1.4rem;
-    color: #6e97b1;
+    color: #50608b;
     padding: 0 8px;
     background-color: #eef2fb;
+    line-height: 1.4;
+
+    &.book-writer-ranking {
+      font-size: 1.3rem;
+      color: #6e97b1;
+      line-height: 1.4;
+      padding: 0;
+      background-color: #fff;
+    }
   }
 
   .book-info {
