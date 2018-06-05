@@ -92,6 +92,9 @@ i {
 .is-active {
   display: block; }
 
+.is-nowrap {
+  white-space: nowrap; }
+
 .contents {
   max-width: 600px;
   margin: 0 auto; }
@@ -663,6 +666,10 @@ i {
     content: '\f067'; }
   .text-icon-accordion.text-icon-accordion-footer::after {
     top: 16px; }
+
+.text-more {
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .thumbnail-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }

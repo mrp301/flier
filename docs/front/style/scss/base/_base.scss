@@ -55,6 +55,10 @@ i {
   display: block;
 }
 
+.is-nowrap {
+  white-space: nowrap;
+}
+
 .contents {
   max-width: 600px;
   margin: 0 auto;

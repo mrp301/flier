@@ -162,10 +162,9 @@
               <h2 class='heading-title l-bottom-xlarge'>著者</h2>
               <div class='article-text l-container'>
                 <div class='border-bottom'>
-                  <p class='l-text-marginBottom'>堀 正岳(ほり まさたけ)<br>研究者・ブロガー。北極における気候変動を研究するかたわら、ライフハック、IT、文具などをテーマとしたブログ「Lifehacking.jp」を運営。知的生産、仕事術、ソーシャルメディアなどについて著書多数。理学博士。</p>
-                  <p class='l-align-right l-bottom-xlarge'>
-                    <!-- <a href='' class='btnRound btnRound-accordion'>すべてを見る</a> -->
-                    <span href='' class='btnRound btnRound-accordion'>閉じる</span>
+                  <p class='l-text-marginBottom text-more is-nowrap' id='js-writerMoreText'>堀 正岳(ほり まさたけ)<br>研究者・ブロガー。北極における気候変動を研究するかたわら、ライフハック、IT、文具などをテーマとしたブログ「Lifehacking.jp」を運営。知的生産、仕事術、ソーシャルメディアなどについて著書多数。理学博士。</p>
+                  <p class='l-align-right l-bottom-xlarge js-btnAccordion'>
+                    <span class='btnRound btnRound-accordion' id='js-writerMoreBtn'>すべてを見る</span>
                   </p>
                 </div>
               </div>
@@ -701,6 +700,18 @@
           scrollTop: 0
           }, 500);
           return false;
+        });
+
+        var toggleBtn = 0;
+        $('#js-writerMoreBtn').on('click', function() {
+          $('#js-writerMoreText').toggleClass('is-nowrap');
+          if(toggleBtn == 0) {
+            $(this).text('閉じる');
+            toggleBtn++;
+          } else {
+            $(this).text('すべてを見る');
+            toggleBtn = 0;
+          }
         });
       });
     </script>
