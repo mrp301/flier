@@ -214,6 +214,11 @@
 
 ## 学んだこと・疑問に思ったこと 
 - box-sizingはmarginは含まない。border、paddingのみ
+- 画像はthumbnail-containerにwidth,heightを指定して、imgは汎用クラスで幅を100%にすることでクラスを1つ省略できる
+- l-bottomだけでなく、汎用クラスにl-rightも作っておけばもっと柔軟に対応できたと反省
+
+##林さんアドバイスメモ
+- base/settings.scssに色、アイコンなどを変数化しておくと見やすい&変更に強いコードになる
   
 ## 時間   
 - 5:00
