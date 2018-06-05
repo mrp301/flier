@@ -1,0 +1,20 @@
+.textBar {
+  position: relative;
+  line-height: 1.8;
+  font-size: 1.7rem;
+  padding: 10px 0;
+
+  &.textBar-accordion {
+
+      &::after {
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      line-height: 1;
+      color: #50608b;
+      content: '\f067';
+    }
+  }
+}

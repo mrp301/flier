@@ -3,20 +3,17 @@
   text-align: center;
   font-weight: 500;
   line-height: 1;
+  background-color: #f3f6fa;
   color: #293c6f;
-  border: 1px solid transparent;
+  border: 1px solid #d9e2ed;
   border-radius: 52px;
 
-  &.btnRound-anchor {
-    background-color: #f3f6fa;
-    border-color: #d9e2ed;
+  &.btnRound-outside {
     padding: 7px 10px;
   }
 
-  &.btnRound-accordion {
+  &.btnRound-readMore {
     font-size: 1.4rem;
-    border-color: #d9e2ed;
-    background-color: #e7edf5;
     padding: 12px 30px;
   }
 }

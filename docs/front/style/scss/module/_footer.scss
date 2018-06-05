@@ -54,17 +54,35 @@
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52;
 
-      &.footer-nav-item-nest {
+      &.footer-nav-item-accordion {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 17px;
+          right: 10px;
+          font-family: "Font Awesome 5 Free";
+          font-weight: bold;
+          line-height: 1;
+          color: #50608b;
+          content: '\f067';
+        }
+      }
+
+      li {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #3a3e52;
         padding-left: 30px;
 
         &:first-child {
           margin-top: 10px;
           border-top: 1px solid #3a3e52;
         }
-      }
 
-      &:last-child {
-        border-bottom: none;
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
   }

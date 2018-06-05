@@ -72,6 +72,7 @@ html {
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 1.7rem;
+  line-height: 1.8;
   font-weight: 200;
   color: #333; }
 
@@ -406,17 +407,14 @@ i {
   text-align: center;
   font-weight: 500;
   line-height: 1;
+  background-color: #f3f6fa;
   color: #293c6f;
-  border: 1px solid transparent;
+  border: 1px solid #d9e2ed;
   border-radius: 52px; }
-  .btnRound.btnRound-anchor {
-    background-color: #f3f6fa;
-    border-color: #d9e2ed;
+  .btnRound.btnRound-outside {
     padding: 7px 10px; }
-  .btnRound.btnRound-accordion {
+  .btnRound.btnRound-readMore {
     font-size: 1.4rem;
-    border-color: #d9e2ed;
-    background-color: #e7edf5;
     padding: 12px 30px; }
 
 .copyright {
@@ -465,13 +463,27 @@ i {
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52; }
-      .footer .footer-nav .footer-nav-item.footer-nav-item-nest {
+      .footer .footer-nav .footer-nav-item.footer-nav-item-accordion {
+        position: relative; }
+        .footer .footer-nav .footer-nav-item.footer-nav-item-accordion::after {
+          position: absolute;
+          top: 17px;
+          right: 10px;
+          font-family: "Font Awesome 5 Free";
+          font-weight: bold;
+          line-height: 1;
+          color: #50608b;
+          content: '\f067'; }
+      .footer .footer-nav .footer-nav-item li {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #3a3e52;
         padding-left: 30px; }
-        .footer .footer-nav .footer-nav-item.footer-nav-item-nest:first-child {
+        .footer .footer-nav .footer-nav-item li:first-child {
           margin-top: 10px;
           border-top: 1px solid #3a3e52; }
-      .footer .footer-nav .footer-nav-item:last-child {
-        border-bottom: none; }
+        .footer .footer-nav .footer-nav-item li:last-child {
+          border-bottom: none; }
   .footer .footer-copyright {
     font-size: 1.2rem;
     padding: 10px 10px 20px;
@@ -530,7 +542,10 @@ i {
 
 .media {
   width: 100%;
-  margin-right: 16px; }
+  margin-right: 16px;
+  line-height: 1.2; }
+  .media .media-thumbnail-container {
+    line-height: 0; }
   .media .media-title {
     font-size: 1.4rem; }
   .media .media-time {
@@ -648,28 +663,24 @@ i {
 .text-strong {
   font-weight: 500; }
 
-.text-bar {
+.text-more {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.textBar {
   position: relative;
   line-height: 1.8;
-  font-size: 1.7rem; }
-
-.text-icon-accordion {
-  position: relative; }
-  .text-icon-accordion::after {
+  font-size: 1.7rem;
+  padding: 10px 0; }
+  .textBar.textBar-accordion::after {
     position: absolute;
-    top: 8px;
+    top: 17px;
     right: 10px;
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     line-height: 1;
     color: #50608b;
     content: '\f067'; }
-  .text-icon-accordion.text-icon-accordion-footer::after {
-    top: 16px; }
-
-.text-more {
-  overflow: hidden;
-  text-overflow: ellipsis; }
 
 .thumbnail-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }

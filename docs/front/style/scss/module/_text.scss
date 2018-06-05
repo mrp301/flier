@@ -2,35 +2,19 @@
   font-weight: 500;
 }
 
-.text-bar {
-  position: relative;
-  line-height: 1.8;
-  font-size: 1.7rem;
-}
-
-.text-icon-accordion {
-  position: relative;
-
-    &::after {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    line-height: 1;
-    color: #50608b;
-    content: '\f067';
-  }
-
-  &.text-icon-accordion-footer {
-
-      &::after {
-      top: 16px;
-    }
-  }
-}
-
 .text-more {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+//
+// .text-icon-accordion {
+//   position: relative;
+//
+//
+//   &.text-icon-accordion-footer {
+//
+//       &::after {
+//       top: 16px;
+//     }
+//   }
+// }
