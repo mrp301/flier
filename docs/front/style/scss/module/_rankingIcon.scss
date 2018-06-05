@@ -1,11 +1,11 @@
-.ranking-badge {
+.rankingIcon {
   position: absolute;
   top: -13px;
   left: 0;
   width: 30px;
   height: 40px;
 
-  .ranking-badge-text {
+  .rankingIcon-text {
     position: absolute;
     top: 6px;
     left: 11px;
@@ -14,17 +14,17 @@
   }
 }
 
-.ranking-badge-first {
+.rankingIcon-first {
   background-image: url('../../../img/ranking-gold.png');
   background-size: contain;
 }
 
-.ranking-badge-second {
+.rankingIcon-second {
   background-image: url('../../../img/ranking-silver.png');
   background-size: contain;
 }
 
-.ranking-badge-third {
+.rankingIcon-third {
   background-image: url('../../../img/ranking-bronze.png');
   background-size: contain;
 }

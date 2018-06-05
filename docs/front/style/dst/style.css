@@ -189,7 +189,7 @@ i {
 .l-text-indent {
   text-indent: 1em; }
 
-.l-text-bottom {
+.l-text-marginBottom {
   margin-bottom: 1.5em; }
 
 .l-left {
@@ -272,21 +272,21 @@ i {
     font-size: 1.4rem;
     color: #293c6f; }
 
-.article {
+.article-text {
   line-height: 1.8;
   text-align: justify; }
 
 .book {
   line-height: 1.2;
   font-size: 1.4rem; }
-  .book .book-thumbnail {
+  .book .book-thumbnail-container {
     padding-right: 20px;
     width: 38%; }
-    .book .book-thumbnail.book-thumbnail-media {
+    .book .book-thumbnail-container.book-thumbnail-container-media {
       padding: 0 30px;
       margin: 0 auto;
       width: 100%; }
-    .book .book-thumbnail.book-thumbnail-ranking {
+    .book .book-thumbnail-container.book-thumbnail-container-ranking {
       position: relative;
       padding-left: 12px;
       width: 45%; }
@@ -298,7 +298,7 @@ i {
     color: #333;
     font-size: 2rem;
     font-weight: 500; }
-    .book .book-title.book-title-small {
+    .book .book-title.book-title-ranking {
       font-size: 1.5rem; }
   .book .book-writer {
     display: inline-block;
@@ -462,9 +462,9 @@ i {
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid #3a3e52; }
-      .footer .footer-nav .footer-nav-item.footer-nav-item-accordion {
+      .footer .footer-nav .footer-nav-item.footer-nav-item-nest {
         padding-left: 30px; }
-        .footer .footer-nav .footer-nav-item.footer-nav-item-accordion:first-child {
+        .footer .footer-nav .footer-nav-item.footer-nav-item-nest:first-child {
           margin-top: 10px;
           border-top: 1px solid #3a3e52; }
       .footer .footer-nav .footer-nav-item:last-child {
@@ -481,7 +481,7 @@ i {
     width: 100px;
     height: 44px; }
 
-.heading-headline {
+.heading-title {
   background-color: #4a85c7;
   border-left: 10px solid #295d97;
   padding: 16px;
@@ -490,22 +490,22 @@ i {
   font-weight: 500;
   line-height: 1.4; }
 
-.heading-subhead {
+.heading-subtitle {
   color: #000;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 36px; }
-  .heading-subhead.heading-subhead-article {
-    background: linear-gradient(transparent 76%, #feeec2 0%); }
-  .heading-subhead.heading-subhead-aside {
-    background: linear-gradient(transparent 76%, #baece0 0%); }
+  .heading-subtitle.heading-subtitle-article {
+    background: linear-gradient(transparent 76%, #feeec2 0); }
+  .heading-subtitle.heading-subtitle-aside {
+    background: linear-gradient(transparent 76%, #baece0 0); }
 
 .heading-ruby {
   font-size: 1.3rem;
   color: #005bab;
   font-weight: 500; }
 
-.heading-crosshead {
+.heading-tertiary {
   color: #34a0ad;
   font-size: 1.8rem;
   font-weight: 500; }
@@ -589,28 +589,28 @@ i {
   .point-label .point-label-number {
     font-size: 1.8rem; }
 
-.ranking-badge {
+.rankingIcon {
   position: absolute;
   top: -13px;
   left: 0;
   width: 30px;
   height: 40px; }
-  .ranking-badge .ranking-badge-text {
+  .rankingIcon .rankingIcon-text {
     position: absolute;
     top: 6px;
     left: 11px;
     color: #fff;
     font-size: 1.5rem; }
 
-.ranking-badge-first {
+.rankingIcon-first {
   background-image: url("../../../img/ranking-gold.png");
   background-size: contain; }
 
-.ranking-badge-second {
+.rankingIcon-second {
   background-image: url("../../../img/ranking-silver.png");
   background-size: contain; }
 
-.ranking-badge-third {
+.rankingIcon-third {
   background-image: url("../../../img/ranking-bronze.png");
   background-size: contain; }
 
@@ -645,9 +645,24 @@ i {
 .text-strong {
   font-weight: 500; }
 
-.text-head {
+.text-bar {
+  position: relative;
   line-height: 1.8;
   font-size: 1.7rem; }
+
+.text-icon-accordion {
+  position: relative; }
+  .text-icon-accordion::after {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    line-height: 1;
+    color: #50608b;
+    content: '\f067'; }
+  .text-icon-accordion.text-icon-accordion-footer::after {
+    top: 16px; }
 
 .thumbnail-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
