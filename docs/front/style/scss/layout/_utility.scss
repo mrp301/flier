@@ -36,9 +36,18 @@
   display: flex;
 
   & > * {
-    width: 50%;
+    width: calc(50% - 8px);
+
+    &:first-child {
+      margin-right: 8px;
+    }
+
+    &:last-child {
+      margin-left: 8px;
+    }
   }
 }
+
 
 .l-flex {
   display: flex;

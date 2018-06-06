@@ -1,0 +1,7 @@
+.l-nav {
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
+}
