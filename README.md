@@ -322,6 +322,10 @@
 - package.jsonの[dependencies][devDependencies]の違い
 - 後者に書いたパッケージは開発者の人以外はインストールされない
 - npm installの際に --save-devをつけることでpackage.jsonに自動で追加される
+- postcssは処理をまとめたもの。なくても一応動くが、役割を括ることができて可読性が増す。
+- cssnano({zindex:false})cssファイルを読み取って、z-indexを0から準備に振り直してくれる
+- .pipe（パイプ）は上から順番に処理が流れる。非同期ではない
+- ()=>{}はfunction(){}の省略版。thisが変わらないという特性もある
   
 ## 時間   
 - 1:00
