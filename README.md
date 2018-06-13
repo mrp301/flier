@@ -321,6 +321,7 @@
 - node.jsのバージョンは奇数が開発版、偶数が安定板
 - package.jsonの[dependencies][devDependencies]の違い
 - 後者に書いたパッケージは開発者の人以外はインストールされない
+- npm installの際に --save-devをつけることでpackage.jsonに自動で追加される
   
 ## 時間   
 - 1:00
