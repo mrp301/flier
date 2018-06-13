@@ -326,6 +326,7 @@
 - cssnano({zindex:false})cssファイルを読み取って、z-indexを0から準備に振り直してくれる
 - .pipe（パイプ）は上から順番に処理が流れる。非同期ではない
 - ()=>{}はfunction(){}の省略版。thisが変わらないという特性もある
+- browserifyを使ったrequireは古い技術なので使わない
   
 ## 時間   
 - 1:00
