@@ -343,5 +343,7 @@
 - webpackはjs,css,imgなどを1つのファイルにまとめてくれる
 - 読み込むファイルが1つになるので処理が軽くなる
 - jsをmodule化できるのが強み
+- package.jsonのmainはライブラリを作るときに必要。普通に環境構築する場合は必要ない
+- package.jsonのscriptは自分でコマンドを登録することができる。（git ci でcommit できるみたいな感じ）
 
 - cssはgulpで処理、jsはwebpackで処理と役割を分けても良いと思った
